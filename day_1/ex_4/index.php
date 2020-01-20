@@ -36,3 +36,7 @@
     }
 
     echo $html;
+?>
+
+<br/>
+<a href="../index.php"> Return </a>

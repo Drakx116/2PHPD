@@ -1,4 +1,3 @@
-<a href="../index.php"> Return </a>
 <h2> Reworked ucwords() </h2>
 
 <?php
@@ -43,3 +42,8 @@
     $message = 'lorem ipsum dolor sit amet.';
 
     echo uppercaseFirstLetters($message);
+?>
+
+<br/>
+<br/>
+<a href="../index.php"> Return </a>

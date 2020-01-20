@@ -1,5 +1,8 @@
-<a href="../index.php"> Return </a>
 <h2> Display car registrations values </h2>
+
+<a href="../index.php"> Return </a>
+<br/>
+<br/>
 
 <?php
 

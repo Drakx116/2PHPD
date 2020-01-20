@@ -1,4 +1,3 @@
-<a href="../index.php"> Return </a>
 <h2> Javascript alert box with PHP </h2>
 
 <button onclick="window.location.reload()"> Reload </button>
@@ -14,5 +13,8 @@
     }
 
     displayMessage('Oui');
+?>
 
-
+<br/>
+<br/>
+<a href="../index.php"> Return </a>

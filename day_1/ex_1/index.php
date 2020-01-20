@@ -1,4 +1,3 @@
-<a href="../index.php"> Return </a>
 <h2> Age and gender conditional expression </h2>
 
 <?php
@@ -29,3 +28,9 @@
     echo ($age >= 31 && $age <= 50 && $gender === 'm')
         ? 'You\'re a man between 31 and 50 years old'
         : 'You\'re not a man between 31 and 50 years old';
+
+?>
+
+<br/>
+<br/>
+<a href="../index.php"> Return </a>
