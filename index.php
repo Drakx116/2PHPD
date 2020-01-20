@@ -2,4 +2,5 @@
 
 <ul>
     <li><a href="./day_1"> Day 1 </a></li>
+    <li><a href="./day_2"> Day 2 </a></li>
 </ul>
