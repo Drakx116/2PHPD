@@ -1,0 +1,12 @@
+{
+    "name": "drakx116/2phpd",
+    "license": "GPL-3.0",
+    "description": "2PHPD daily labs",
+    "authors": [
+        {
+            "name": "Drakx116",
+            "email": "alexandre2.guyot@gmail.com"
+        }
+    ],
+    "require": {}
+}
