@@ -21,11 +21,11 @@
 
 <h2> Customer address (JS Validation) </h2>
 <form action="./post.php" method="POST" name="address_form" onsubmit="return checkFormInputs()">
-    <input name="pseudo" placeholder="Pseudo"  type="text"><br />
-    <input name="email" placeholder="Email"  type="text"><br />
-    <input name="address" placeholder="Address"  type="text"><br />
-    <input name="pc" placeholder="Postal Code"  type="text"><br />
-    <input name="city" placeholder="City"  type="text"><br />
+    <input name="pseudo" placeholder="Pseudo" type="text"><br />
+    <input name="email" placeholder="Email" type="text"><br />
+    <input name="address" placeholder="Address" type="text"><br />
+    <input name="pc" placeholder="Postal Code" type="text"><br />
+    <input name="city" placeholder="City" type="text"><br />
 
     <br />
     <input type="submit" value="Send">
