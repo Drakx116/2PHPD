@@ -8,5 +8,7 @@
             "email": "alexandre2.guyot@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "ext-pdo": "*"
+    }
 }
