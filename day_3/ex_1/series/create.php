@@ -1,28 +1,24 @@
 <?php
     require_once('../../../db.php');
 
-    $pseudo = null;
-    $email = null;
-    $address = null;
-    $pc = null;
-    $city = null;
+    $title = null;
+    $author = null;
+    $note = null;
 
     if(isset($_POST['submit-form'])) {
-        $pseudo = $_POST['pseudo'] ?? null;
-        $email = $_POST['email'] ?? null;
-        $address = $_POST['address'] ?? null;
-        $pc = $_POST['pc'] ?? null;
-        $city = $_POST['city'] ?? null;
+        $title = $_POST['title'] ?? null;
+        $author = $_POST['author'] ?? null;
+        $note = $_POST['note'] ?? null;
 
         // Reloads the current page
-        if(!($pseudo && $email && $address && $pc && $city)) {
+        if(!($title && $author && $note)) {
             header('Location: '.$_SERVER['REQUEST_URI']);
         }
 
-        $data = [ $pseudo, $email, $address, $pc, $city ];
+        $data = [ $title, $author, $note, DateTime::RFC850 ];
 
-        $accountQuery = $db->prepare('INSERT INTO series (pseudo, email, address, pc, city) VALUES (?, ?, ?, ?, ?)');
-        $result = $accountQuery->execute( array($pseudo, $email, $address, $pc, $city) );
+        $accountQuery = $db->prepare('INSERT INTO series (title, author, note, creation_date) VALUES ( ?, ?, ?, ? )');
+        $result = $accountQuery->execute( $data );
 
         if($accountQuery->rowCount()) {
             header('Location: ../index.php' );
@@ -33,11 +29,9 @@
 <h2> Create a new series </h2>
 
 <form action="" method="POST">
-    <input name="pseudo" placeholder="Pseudo" type="text" value="<?= $pseudo ?>" ><br />
-    <input name="email" placeholder="Email" type="text"><br />
-    <input name="address" placeholder="Address" type="text"><br />
-    <input name="pc" placeholder="Postal Code" type="text"><br />
-    <input name="city" placeholder="City" type="text"><br />
+    <input name="title" placeholder="Title" type="text"><br />
+    <input name="author" placeholder="Author" type="text"><br />
+    <input name="note" placeholder="Note" type="number" min="0" max="5"><br />
 
     <br />
     <input type="submit" name="submit-form" value="Send">
