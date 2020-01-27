@@ -16,7 +16,7 @@
         ],
         'Lacoste' => [
             'firstname' => 'Antoine',
-            'city' => 'Aulnoye les Valenciennes',
+            'city' => 'Aulnoy-lez-Valenciennes',
             'age' => 20
         ],
     ];
