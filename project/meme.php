@@ -7,6 +7,8 @@
     ]
 ?>
 
+<?php require_once './templates/navbar.php'; ?>
+
 <form action="./memeRedirection.php" method="post">
     <label> Select a new meme :
         <select name="meme-select">
