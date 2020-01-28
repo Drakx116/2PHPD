@@ -1,20 +1,28 @@
 <script type="text/javascript">
     function checkFormInputs() {
-        let pseudo = document.forms['address_form']['pseudo'].value;
-        let email = document.forms['address_form']['email'].value;
-        let address = document.forms['address_form']['address'].value;
-        let pc = document.forms['address_form']['pc'].value;
-        let city = document.forms['address_form']['city'].value;
+        let errors = [];
 
-        let redirection = (pseudo && email && address && pc && city);
+        let form = document.forms['address_form'];
 
-        if(redirection) {
+        for (let i = 0; i < form.length - 1; i++) {
+            let inputValue = form[i].value;
+            if(!inputValue) {
+                errors.push('Missing ' + form[i].name)
+            }
+        }
+
+        if(!errors.length) {
             return true;
         }
-        else {
-            alert('Missing fields');
-            return false;
-        }
+
+        let message = '';
+        errors.forEach((error) => {
+            message += error + '\n';
+        });
+
+        alert(message);
+
+        return false;
     }
 </script>
 
