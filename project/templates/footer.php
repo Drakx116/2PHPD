@@ -1,4 +1,5 @@
 <footer>
+    <br />
     <hr />
     @Drakx116 - 2020
 
