@@ -37,6 +37,8 @@
     ?>
 </div>
 
+<a href="./article.php?name=Car&color=red"> Example </a>
+
 <?php require_once './templates/footer.php'; ?>
 </body>
 </html>
