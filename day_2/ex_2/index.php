@@ -6,9 +6,9 @@
         let pc = document.forms['address_form']['pc'].value;
         let city = document.forms['address_form']['city'].value;
 
-        let error = !!(pseudo && email && address && pc && city);
+        let redirection = (pseudo && email && address && pc && city);
 
-        if(error) {
+        if(redirection) {
             return true;
         }
         else {
