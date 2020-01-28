@@ -20,7 +20,7 @@
 
 
 <h2> Customer address in page (JS Validation) </h2>
-<form action="./index.php" method="POST" name="address_form" onsubmit="return checkFormInputs()">
+<form action="#" method="POST" name="address_form" onsubmit="return checkFormInputs()">
     <input name="pseudo" placeholder="Pseudo"  type="text"><br />
     <input name="email" placeholder="Email"  type="text"><br />
     <input name="address" placeholder="Address"  type="text"><br />
