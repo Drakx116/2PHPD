@@ -9,6 +9,7 @@
         }
     ],
     "require": {
-        "ext-pdo": "*"
+        "ext-pdo": "*",
+        "symfony/var-dumper": "^5.0"
     }
 }
