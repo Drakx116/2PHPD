@@ -4,7 +4,7 @@
 
         <?php if (count($_SESSION)) { ?>
 
-            <li><a href="./register.php"> Profile </a></li>
+            <li><a href="./index.php"> Profile </a></li>
             <li><a href="./logout.php"> Logout  </a></li>
 
         <?php }
