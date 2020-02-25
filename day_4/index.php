@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    require_once '../vendor/autoload.php';
+
+    $pseudo = $_SESSION['pseudo'] ?? 'Guest';
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,8 +13,6 @@
 
 <body>
     <?php require_once './templates/navbar.php' ?>
-    <h2> Awesome Blog </h2>
-
-    <p> Welcome Guest </p>
+    <h2> Awesome <?= $pseudo ?> </h2>
 </body>
 </html>
