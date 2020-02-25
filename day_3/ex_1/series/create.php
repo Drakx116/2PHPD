@@ -1,14 +1,10 @@
 <?php
     require_once('../../../db.php');
 
-    $title = null;
-    $author = null;
-    $note = null;
-
     if(isset($_POST['submit-form'])) {
         $title = $_POST['title'] ?? null;
         $author = $_POST['author'] ?? null;
-        $mark = $_POST['mark'] ?? null;
+        $mark = $_POST['mark'] ?? 0;
 
         // Reloads the current page
         if(!($title && $author && $mark)) {

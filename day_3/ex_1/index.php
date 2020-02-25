@@ -3,7 +3,7 @@
 
     $seriesQuery = $db->prepare('SELECT * FROM series');
     $seriesQuery->execute([]);
-    $allSeries = $seriesQuery->fetchAll();
+    $allSeries = $seriesQuery->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 <h2> CRUD Series </h2>
