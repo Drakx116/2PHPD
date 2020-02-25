@@ -6,9 +6,9 @@
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-
+    <title> Home </title>
 </head>
 
 <body>
